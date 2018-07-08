@@ -5,10 +5,10 @@ browserSync = require('browser-sync').create();
 gulp.task('watch', function(){
 
 	browserSync.init({
+		notify: false,
 		server: {
 			baseDir: "app"
-		},
-		notify: false
+		}
 	});
 
 	watch('./app/index.html', function(){
