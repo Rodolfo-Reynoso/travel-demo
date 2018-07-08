@@ -1117,7 +1117,7 @@ Instead edit gulp/templates/sprite */
 }
 
 .site-header--is-expanded {
-		background-color: rgba(47,85,114, .55);
+		background-color: rgba(47,85,114, .5);
 	}
 
 @media (min-width: 800px) {
@@ -1338,4 +1338,19 @@ a {
 		padding: 12px 0;
 		background-color: transparent
 }
+	}
+
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
 	}
