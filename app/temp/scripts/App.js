@@ -11275,8 +11275,7 @@ var StickyHeader = function () {
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
-		// Deactivated his fix was patched on my chrome version
-		// this.refreshWaypoints();
+		this.refreshWaypoints();
 	}
 
 	_createClass(StickyHeader, [{
